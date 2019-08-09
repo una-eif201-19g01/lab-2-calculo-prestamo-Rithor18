@@ -9,8 +9,22 @@
 #include <cstdint>
 #include <string>
 
-class CalculoPrestamo{
+class CalculoPrestamo {
+private:
     float monto;
+    float obtenerPorcentaje(std::string porcentajeTXT)
+    int calcularTiempoEnMeses();
+    float calcularInteresMensual();
+public:
+
+    CalculoPrestamo() {
+    }
+
+    CalculoPrestamo(float monto) :
+    monto(monto) {
+    }
+
+
 };
 
 
